@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 3 5
+Title "ProRTK: All in one Real Time Kinematic device"
+Date "2021-05-12"
+Rev "1"
+Comp "Blackshield Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -360,9 +360,9 @@ $EndComp
 Wire Wire Line
 	2400 4450 3000 4450
 Text GLabel 900  4250 0    50   Input ~ 0
-SCL
+SCL_IMU
 Text GLabel 900  4350 0    50   Input ~ 0
-SDA
+SDA_IMU
 Wire Wire Line
 	900  4350 1200 4350
 Connection ~ 1200 4350
@@ -506,9 +506,9 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280-D
 	1    0    0    -1  
 $EndComp
 Text GLabel 9800 3600 2    50   Input ~ 0
-SCL
+SCL_ALT
 Text GLabel 9800 3800 2    50   Input ~ 0
-SDA
+SDA_ALT
 Wire Wire Line
 	9100 3800 9500 3800
 Wire Wire Line
