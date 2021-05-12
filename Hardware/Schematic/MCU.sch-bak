@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 2 5
+Title "ProRTK: All in one Real Time Kinematic device"
+Date "2021-05-12"
+Rev "1"
+Comp "Blackshield Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -418,4 +418,58 @@ F 3 "" H 2900 3650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 3650 2900 3450
+Text GLabel 8950 3550 2    50   Input ~ 0
+D+
+Text GLabel 8950 3650 2    50   Input ~ 0
+D-
+Text GLabel 9800 4000 2    50   Input ~ 0
+SDA_ALT
+Text GLabel 9800 3800 2    50   Input ~ 0
+SCL_ALT
+Text GLabel 9250 4700 0    50   Input ~ 0
+SDA_IMU
+Text GLabel 9250 4600 0    50   Input ~ 0
+SCL_IMU
+Text GLabel 9200 4500 0    50   Input ~ 0
+BOOT
+Text GLabel 9150 4300 0    50   Input ~ 0
+INT
+Text GLabel 9300 4100 0    50   Input ~ 0
+nRESET
+Text GLabel 8200 5100 2    50   Input ~ 0
+SDA
+Text GLabel 8200 4900 2    50   Input ~ 0
+SCL
+Text GLabel 8150 4700 2    50   Input ~ 0
+1PPS
+Text GLabel 8150 4500 2    50   Input ~ 0
+SYS_RSTN
+Text GLabel 8150 4400 2    50   Input ~ 0
+WAKE-UP
+Text GLabel 8150 4300 2    50   Input ~ 0
+RX_GNSS
+Text GLabel 8150 4200 2    50   Input ~ 0
+TX_GNSS
+Text GLabel 8550 4000 0    50   Input ~ 0
+SDA_GNSS
+Text GLabel 8550 4100 0    50   Input ~ 0
+SCL_GNSS
+Text GLabel 8200 3850 2    50   Input ~ 0
+LED3
+Text GLabel 8200 3750 2    50   Input ~ 0
+LED2
+Text GLabel 8200 3650 2    50   Input ~ 0
+LED1
+Text GLabel 8150 3300 2    50   Input ~ 0
+DAT0
+Text GLabel 8150 3400 2    50   Input ~ 0
+DAT1
+Text GLabel 8150 3200 2    50   Input ~ 0
+CLK
+Text GLabel 8150 3100 2    50   Input ~ 0
+CMD
+Text GLabel 8150 2900 2    50   Input ~ 0
+DAT2
+Text GLabel 8150 3000 2    50   Input ~ 0
+DAT3
 $EndSCHEMATC
