@@ -1324,15 +1324,246 @@ Wire Notes Line
 Wire Notes Line
 	9500 4550 10950 4550
 Wire Notes Line
-	11200 5700 9350 5700
-Wire Notes Line
-	9350 900  9350 5700
-Wire Notes Line
-	11200 500  11200 5700
+	11200 500  11200 6500
 $Sheet
-S 7000 3100 2300 3300
+S 7000 3150 2300 1950
 U 609C383C
 F0 "ESP32" 50
 F1 "ESP32.sch" 50
 $EndSheet
+Text GLabel 10600 5050 2    50   Input ~ 0
+SPIQ
+Text GLabel 10600 5200 2    50   Input ~ 0
+SPID
+Text GLabel 10600 5350 2    50   Input ~ 0
+SPICLK
+Text GLabel 10600 5500 2    50   Input ~ 0
+SPICSO
+Text GLabel 10600 5800 2    50   Input ~ 0
+SPIHD
+Text GLabel 10600 5650 2    50   Input ~ 0
+SPIWP
+Text GLabel 7200 5700 1    50   Input ~ 0
+EXP_TX
+Text GLabel 7350 5700 1    50   Input ~ 0
+ESP_RX
+Text GLabel 8750 5550 2    50   Input ~ 0
+EN
+Text GLabel 8750 5700 2    50   Input ~ 0
+MTMS
+Text GLabel 8750 5850 2    50   Input ~ 0
+MTDI
+Text GLabel 8750 6000 2    50   Input ~ 0
+MTCK
+Text GLabel 8750 6150 2    50   Input ~ 0
+MTDO
+$Comp
+L Connector:TestPoint SPID
+U 1 1 60B02F01
+P 10150 5200
+F 0 "SPID" V 10150 5400 50  0000 L CNN
+F 1 "TestPoint" V 10050 5150 50  0001 L CNN
+F 2 "" H 10350 5200 50  0001 C CNN
+F 3 "~" H 10350 5200 50  0001 C CNN
+	1    10150 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint SPI1
+U 1 1 60B02F07
+P 10150 5050
+F 0 "SPI1" V 10150 5250 50  0000 L CNN
+F 1 "TestPoint" V 10050 5000 50  0001 L CNN
+F 2 "" H 10350 5050 50  0001 C CNN
+F 3 "~" H 10350 5050 50  0001 C CNN
+	1    10150 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint SPICSO
+U 1 1 60B28901
+P 10150 5500
+F 0 "SPICSO" V 10150 5700 50  0000 L CNN
+F 1 "TestPoint" V 10050 5450 50  0001 L CNN
+F 2 "" H 10350 5500 50  0001 C CNN
+F 3 "~" H 10350 5500 50  0001 C CNN
+	1    10150 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint SPICLK
+U 1 1 60B28907
+P 10150 5350
+F 0 "SPICLK" V 10150 5550 50  0000 L CNN
+F 1 "TestPoint" V 10050 5300 50  0001 L CNN
+F 2 "" H 10350 5350 50  0001 C CNN
+F 3 "~" H 10350 5350 50  0001 C CNN
+	1    10150 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint SPIHD
+U 1 1 60B2E050
+P 10150 5800
+F 0 "SPIHD" V 10150 6000 50  0000 L CNN
+F 1 "TestPoint" V 10050 5750 50  0001 L CNN
+F 2 "" H 10350 5800 50  0001 C CNN
+F 3 "~" H 10350 5800 50  0001 C CNN
+	1    10150 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint SPIWP
+U 1 1 60B2E056
+P 10150 5650
+F 0 "SPIWP" V 10150 5850 50  0000 L CNN
+F 1 "TestPoint" V 10050 5600 50  0001 L CNN
+F 2 "" H 10350 5650 50  0001 C CNN
+F 3 "~" H 10350 5650 50  0001 C CNN
+	1    10150 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10150 5050 10600 5050
+Wire Wire Line
+	10600 5200 10150 5200
+Wire Wire Line
+	10150 5350 10600 5350
+Wire Wire Line
+	10600 5500 10150 5500
+Wire Wire Line
+	10150 5650 10600 5650
+Wire Wire Line
+	10150 5800 10600 5800
+Wire Notes Line
+	9500 5900 11100 5900
+Wire Notes Line
+	11100 5900 11100 4950
+Wire Notes Line
+	9500 4950 11100 4950
+Wire Notes Line
+	9500 4950 9500 5900
+Wire Notes Line
+	7000 5250 7000 6500
+Wire Notes Line
+	7000 6500 11200 6500
+Wire Notes Line
+	7000 5250 9350 5250
+Wire Notes Line
+	9350 5250 9350 500 
+$Comp
+L Connector:TestPoint ESP_RX
+U 1 1 60B7FAB2
+P 7350 5900
+F 0 "ESP_RX" V 7350 6100 50  0000 L CNN
+F 1 "TestPoint" V 7250 5850 50  0001 L CNN
+F 2 "" H 7550 5900 50  0001 C CNN
+F 3 "~" H 7550 5900 50  0001 C CNN
+	1    7350 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint ESP_TX
+U 1 1 60B7FAB8
+P 7200 5900
+F 0 "ESP_TX" V 7200 6100 50  0000 L CNN
+F 1 "TestPoint" V 7100 5850 50  0001 L CNN
+F 2 "" H 7400 5900 50  0001 C CNN
+F 3 "~" H 7400 5900 50  0001 C CNN
+	1    7200 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint MTMS
+U 1 1 60B7FABE
+P 8050 5700
+F 0 "MTMS" V 8050 5900 50  0000 L CNN
+F 1 "TestPoint" V 7950 5650 50  0001 L CNN
+F 2 "" H 8250 5700 50  0001 C CNN
+F 3 "~" H 8250 5700 50  0001 C CNN
+	1    8050 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint EN
+U 1 1 60B7FAC4
+P 8050 5550
+F 0 "EN" V 8050 5750 50  0000 L CNN
+F 1 "TestPoint" V 7950 5500 50  0001 L CNN
+F 2 "" H 8250 5550 50  0001 C CNN
+F 3 "~" H 8250 5550 50  0001 C CNN
+	1    8050 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint MTCK
+U 1 1 60B7FACA
+P 8050 6000
+F 0 "MTCK" V 8050 6200 50  0000 L CNN
+F 1 "TestPoint" V 7950 5950 50  0001 L CNN
+F 2 "" H 8250 6000 50  0001 C CNN
+F 3 "~" H 8250 6000 50  0001 C CNN
+	1    8050 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint MTDI
+U 1 1 60B7FAD0
+P 8050 5850
+F 0 "MTDI" V 8050 6050 50  0000 L CNN
+F 1 "TestPoint" V 7950 5800 50  0001 L CNN
+F 2 "" H 8250 5850 50  0001 C CNN
+F 3 "~" H 8250 5850 50  0001 C CNN
+	1    8050 5850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 5900 7200 5700
+Wire Wire Line
+	7350 5700 7350 5900
+Wire Notes Line
+	7450 5300 7100 5300
+Wire Notes Line
+	7100 5300 7100 6400
+Wire Notes Line
+	7100 6400 7450 6400
+Wire Notes Line
+	7450 6400 7450 5300
+$Comp
+L Connector:TestPoint MTDO
+U 1 1 60BAB95C
+P 8050 6150
+F 0 "MTDO" V 8050 6350 50  0000 L CNN
+F 1 "TestPoint" V 7950 6100 50  0001 L CNN
+F 2 "" H 8250 6150 50  0001 C CNN
+F 3 "~" H 8250 6150 50  0001 C CNN
+	1    8050 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 5550 8050 5550
+Wire Wire Line
+	8050 5700 8750 5700
+Wire Wire Line
+	8050 5850 8750 5850
+Wire Wire Line
+	8050 6000 8750 6000
+Wire Wire Line
+	8050 6150 8750 6150
+Wire Notes Line
+	9150 6300 9150 5400
+Wire Notes Line
+	7550 5400 7550 6300
+Wire Notes Line
+	7550 6300 9150 6300
+Wire Notes Line
+	7550 5400 9150 5400
+Wire Notes Line
+	2150 500  2150 1150
+Wire Notes Line
+	2150 1150 3550 1150
+Wire Notes Line
+	3550 1150 3550 500 
+Wire Notes Line
+	3550 500  2150 500 
 $EndSCHEMATC
