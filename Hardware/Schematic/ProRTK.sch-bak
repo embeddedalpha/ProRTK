@@ -543,16 +543,10 @@ Wire Wire Line
 Wire Wire Line
 	5250 5650 5450 5650
 $Sheet
-S 3600 600  3300 2300
+S 3600 600  2900 2300
 U 60A10196
 F0 "MCU" 50
 F1 "MCU.sch" 50
-$EndSheet
-$Sheet
-S 7000 600  2300 2300
-U 60A47002
-F0 "IMU" 50
-F1 "IMU.sch" 50
 $EndSheet
 Wire Wire Line
 	10600 2800 10050 2800
@@ -902,7 +896,7 @@ Wire Notes Line
 Wire Notes Line
 	2600 3500 3550 3500
 $Sheet
-S 3600 3100 3300 2000
+S 3600 3100 2900 2000
 U 60BF870D
 F0 "GNSS" 50
 F1 "GNSS.sch" 50
@@ -1323,12 +1317,6 @@ Wire Notes Line
 	9500 4550 10950 4550
 Wire Notes Line
 	11200 500  11200 6500
-$Sheet
-S 7000 3150 2300 1950
-U 609C383C
-F0 "ESP32" 50
-F1 "ESP32.sch" 50
-$EndSheet
 Text GLabel 10600 5050 2    50   Input ~ 0
 SPIQ
 Text GLabel 10600 5200 2    50   Input ~ 0
@@ -1724,4 +1712,16 @@ F 3 "" H 2100 5800 50  0001 C CNN
 	1    2100 5850
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 6600 3100 2650 2000
+U 609C383C
+F0 "ESP32" 50
+F1 "ESP32.sch" 50
+$EndSheet
+$Sheet
+S 6600 600  2650 2300
+U 60A47002
+F0 "IMU" 50
+F1 "IMU.sch" 50
+$EndSheet
 $EndSCHEMATC
