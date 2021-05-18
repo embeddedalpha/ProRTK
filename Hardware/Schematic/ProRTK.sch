@@ -869,7 +869,7 @@ U 1 1 60BC0B64
 P 900 950
 F 0 "CR2023" V 1200 1000 50  0000 R CNN
 F 1 "Conn_01x02" V 1050 1000 50  0000 R CNN
-F 2 "Battery:BatteryHolder_Keystone_1058_1x2032" H 900 950 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" H 900 950 50  0001 C CNN
 F 3 "~" H 900 950 50  0001 C CNN
 	1    900  950 
 	-1   0    0    1   
@@ -1355,10 +1355,10 @@ F 3 "~" H 10350 5200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint SPI1
+L Connector:TestPoint SPIQ1
 U 1 1 60B02F07
 P 10150 5050
-F 0 "SPI1" V 10150 5250 50  0000 L CNN
+F 0 "SPIQ1" V 10150 5250 50  0000 L CNN
 F 1 "TestPoint" V 10050 5000 50  0001 L CNN
 F 2 "ASSETS:testpoint_0.3mm" H 10350 5050 50  0001 C CNN
 F 3 "~" H 10350 5050 50  0001 C CNN
@@ -1724,4 +1724,59 @@ U 60A47002
 F0 "IMU" 50
 F1 "IMU.sch" 50
 $EndSheet
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60A47F18
+P 2300 650
+F 0 "H1" H 2400 696 50  0000 L CNN
+F 1 "MountingHole" H 2400 605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2300 650 50  0001 C CNN
+F 3 "~" H 2300 650 50  0001 C CNN
+	1    2300 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60A58EC5
+P 3400 650
+F 0 "H4" V 3446 750 50  0000 L CNN
+F 1 "MountingHole" V 3355 750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3400 650 50  0001 C CNN
+F 3 "~" H 3400 650 50  0001 C CNN
+	1    3400 650 
+	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60A8D98E
+P 2900 850
+F 0 "H3" V 2946 950 50  0000 L CNN
+F 1 "MountingHole" V 2855 950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2900 850 50  0001 C CNN
+F 3 "~" H 2900 850 50  0001 C CNN
+	1    2900 850 
+	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60A8DCE3
+P 3450 1050
+F 0 "H5" V 3496 1150 50  0000 L CNN
+F 1 "MountingHole" V 3405 1150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3450 1050 50  0001 C CNN
+F 3 "~" H 3450 1050 50  0001 C CNN
+	1    3450 1050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60A8E0EF
+P 2300 1050
+F 0 "H2" V 2346 1150 50  0000 L CNN
+F 1 "MountingHole" V 2255 1150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2300 1050 50  0001 C CNN
+F 3 "~" H 2300 1050 50  0001 C CNN
+	1    2300 1050
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
