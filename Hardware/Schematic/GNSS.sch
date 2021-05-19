@@ -504,27 +504,7 @@ Wire Wire Line
 	4050 3300 4050 3450
 Connection ~ 4050 3450
 Wire Wire Line
-	4050 3450 3500 3450
-$Comp
-L Regular_Use:RF_Taper U10
-U 1 1 60A0FCC2
-P 3550 2850
-F 0 "U10" V 3534 2792 50  0000 R CNN
-F 1 "RF_Taper" V 3443 2792 50  0000 R CNN
-F 2 "ASSETS:KL_Taper" H 3450 3050 50  0001 C CNN
-F 3 "" H 3450 3050 50  0001 C CNN
-	1    3550 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3400 2100 3400 3300
-Wire Wire Line
-	3550 3050 3500 3050
-Wire Wire Line
-	3500 3050 3500 3450
-Connection ~ 3500 3450
-Wire Wire Line
-	3500 3450 3300 3450
+	3400 2100 3400 2400
 $Comp
 L Regular_Use:RF_Taper U9
 U 1 1 60A16A72
@@ -541,4 +521,22 @@ Wire Wire Line
 Connection ~ 2250 3600
 Wire Wire Line
 	2250 3600 2300 3600
+$Comp
+L Regular_Use:RF_Taper U3
+U 1 1 60A8E179
+P 3650 2400
+F 0 "U3" V 3634 2342 50  0000 R CNN
+F 1 "RF_Taper" H 3850 2500 50  0000 R CNN
+F 2 "ASSETS:KL_Taper" H 3550 2600 50  0001 C CNN
+F 3 "" H 3550 2600 50  0001 C CNN
+	1    3650 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2400 3400 2400
+Connection ~ 3400 2400
+Wire Wire Line
+	3400 2400 3400 3300
+Wire Wire Line
+	3300 3450 4050 3450
 $EndSCHEMATC
