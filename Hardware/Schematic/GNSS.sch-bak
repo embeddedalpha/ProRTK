@@ -142,8 +142,6 @@ Wire Wire Line
 	3500 3800 3500 3900
 Wire Wire Line
 	3300 3800 3500 3800
-Wire Wire Line
-	3400 2100 3400 2000
 Connection ~ 3400 2100
 Wire Wire Line
 	3050 2100 3400 2100
@@ -171,17 +169,6 @@ F 1 "1nF" H 3165 2405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3088 2300 50  0001 C CNN
 F 3 "~" H 3050 2450 50  0001 C CNN
 	1    3050 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR063
-U 1 1 609C5138
-P 3400 2000
-F 0 "#PWR063" H 3400 1850 50  0001 C CNN
-F 1 "VDD" H 3415 2173 50  0000 C CNN
-F 2 "" H 3400 2000 50  0001 C CNN
-F 3 "" H 3400 2000 50  0001 C CNN
-	1    3400 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -251,17 +238,6 @@ F 5 "0.4mm" H 2800 3600 50  0001 L BNN "Field5"
 F 6 "2.0" H 2800 3600 50  0001 L BNN "Field6"
 	1    2800 3600
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:VDD #PWR068
-U 1 1 60A707E6
-P 6450 3750
-F 0 "#PWR068" H 6450 3600 50  0001 C CNN
-F 1 "VDD" H 6465 3923 50  0000 C CNN
-F 2 "" H 6450 3750 50  0001 C CNN
-F 3 "" H 6450 3750 50  0001 C CNN
-	1    6450 3750
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8950 3400 8500 3400
@@ -352,8 +328,6 @@ F 3 "~" H 6900 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 3300 8950 3300
-Text GLabel 8650 3050 1    50   Input ~ 0
-VBAT
 Wire Wire Line
 	8650 3200 8650 3050
 Wire Wire Line
@@ -539,4 +513,17 @@ Wire Wire Line
 	3400 2400 3400 3300
 Wire Wire Line
 	3300 3450 4050 3450
+Wire Wire Line
+	8650 3050 8950 3050
+Wire Wire Line
+	8950 3050 8950 3300
+Connection ~ 8950 3300
+Text GLabel 6450 3750 0    50   Input ~ 0
+VCC_RF
+Text GLabel 3200 1900 0    50   Input ~ 0
+VCC_RF
+Wire Wire Line
+	3200 1900 3400 1900
+Wire Wire Line
+	3400 1900 3400 2100
 $EndSCHEMATC
