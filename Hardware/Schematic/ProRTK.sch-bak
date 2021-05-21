@@ -194,17 +194,6 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 1750 7000 50  
 	1    1750 7000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR010
-U 1 1 60C28FCD
-P 3250 6850
-F 0 "#PWR010" H 3250 6700 50  0001 C CNN
-F 1 "VDD" H 3265 7023 50  0000 C CNN
-F 2 "" H 3250 6850 50  0001 C CNN
-F 3 "" H 3250 6850 50  0001 C CNN
-	1    3250 6850
-	1    0    0    -1  
-$EndComp
 Text GLabel 2850 7400 2    50   Input ~ 0
 DAT1
 Wire Wire Line
@@ -229,8 +218,6 @@ Wire Wire Line
 	2650 6700 2850 6700
 Text GLabel 2850 6900 2    50   Input ~ 0
 CMD
-Wire Wire Line
-	3250 6850 3250 7000
 Wire Wire Line
 	2650 7000 3250 7000
 $Comp
@@ -863,34 +850,6 @@ Wire Notes Line
 	3550 3550 3550 6150
 Wire Notes Line
 	500  6150 3550 6150
-$Comp
-L Connector_Generic:Conn_01x02 CR2023
-U 1 1 60BC0B64
-P 900 950
-F 0 "CR2023" V 1200 1000 50  0000 R CNN
-F 1 "Conn_01x02" V 1050 1000 50  0000 R CNN
-F 2 "Battery:BatteryHolder_Keystone_3034_1x20mm" H 900 950 50  0001 C CNN
-F 3 "~" H 900 950 50  0001 C CNN
-	1    900  950 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1100 950  1700 950 
-Text GLabel 1800 950  2    50   Input ~ 0
-VBAT
-Wire Wire Line
-	1100 850  1200 850 
-$Comp
-L power:GND #PWR03
-U 1 1 60BC8A28
-P 1300 800
-F 0 "#PWR03" H 1300 550 50  0001 C CNN
-F 1 "GND" H 1305 627 50  0000 C CNN
-F 2 "" H 1300 800 50  0001 C CNN
-F 3 "" H 1300 800 50  0001 C CNN
-	1    1300 800 
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	500  3500 2550 3500
 Wire Notes Line
@@ -1088,10 +1047,6 @@ Wire Notes Line
 	3550 1200 3550 3500
 Wire Notes Line
 	500  1150 500  500 
-Wire Wire Line
-	1200 800  1200 850 
-Wire Wire Line
-	1200 800  1300 800 
 Wire Notes Line
 	2100 1150 2100 500 
 Wire Notes Line
@@ -1577,22 +1532,6 @@ Connection ~ 2450 5700
 Wire Wire Line
 	2450 5700 2450 5800
 NoConn ~ 2200 5650
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 60AC62EF
-P 1700 750
-F 0 "#FLG0103" H 1700 825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 923 50  0000 C CNN
-F 2 "" H 1700 750 50  0001 C CNN
-F 3 "~" H 1700 750 50  0001 C CNN
-	1    1700 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 750  1700 950 
-Connection ~ 1700 950 
-Wire Wire Line
-	1700 950  1800 950 
 NoConn ~ 800  4850
 NoConn ~ 800  5550
 NoConn ~ 800  5650
@@ -1779,4 +1718,29 @@ F 3 "~" H 2300 1050 50  0001 C CNN
 	1    2300 1050
 	0    1    -1   0   
 $EndComp
+$Comp
+L power:+3V3 #PWR03
+U 1 1 60AAC486
+P 3250 6800
+F 0 "#PWR03" H 3250 6650 50  0001 C CNN
+F 1 "+3V3" H 3265 6973 50  0000 C CNN
+F 2 "" H 3250 6800 50  0001 C CNN
+F 3 "" H 3250 6800 50  0001 C CNN
+	1    3250 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 6800 3250 7000
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 60B08E3E
+P 1200 850
+F 0 "J?" H 1280 846 50  0000 L CNN
+F 1 "Conn_01x01" H 1280 801 50  0001 L CNN
+F 2 "ASSETS:Company_Logo1" H 1200 850 50  0001 C CNN
+F 3 "~" H 1200 850 50  0001 C CNN
+	1    1200 850 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1000 850 
 $EndSCHEMATC
