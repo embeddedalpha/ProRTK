@@ -119,8 +119,6 @@ Wire Wire Line
 	3250 1750 3250 1900
 Wire Wire Line
 	3900 2400 3900 2150
-Text GLabel 3900 2150 0    50   Input ~ 0
-VBAT
 Wire Wire Line
 	4000 2400 4000 2250
 Wire Wire Line
@@ -719,4 +717,9 @@ Wire Wire Line
 Connection ~ 2400 3000
 Wire Wire Line
 	2400 3000 2100 3000
+Wire Wire Line
+	3900 2150 4000 2150
+Wire Wire Line
+	4000 2150 4000 2250
+Connection ~ 4000 2250
 $EndSCHEMATC
