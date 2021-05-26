@@ -1,4 +1,4 @@
-# ProRTK ![visitors](https://visitor-badge.glitch.me/badge?page_id=embeddedalpha.stm32f103c8t6)
+# ProRTK ![visitors](https://visitor-badge.glitch.me/badge?page_id=embeddedalpha.ProRTK)
 Real Time Kinematic Board 
 ![1](https://user-images.githubusercontent.com/38166489/119144997-da7d3000-ba66-11eb-9542-b698618a54c3.png)
 
